@@ -27,9 +27,13 @@
 
     <header class="border-b-2 border-gray-300">
         <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
-            <div class="left">
+            <div class="left flex gap-1">
                 <div class="logo w-[60px]">
                     <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="balance-info">
+                    <h2 class="text-2xl font-bold">$ <span id="balance">45000</span></h2>
+                    <p class="text-neutral/50">available balance</p>
                 </div>
             </div>
             <div class="right">
@@ -37,6 +41,37 @@
             </div>
         </section>
     </header>
+    <section class="w-11/12 mx-auto py-10 space-y-3">
+        <h2 class="text-3xl font-bold">Welcome to pay<span class="text-primary">oo</span></h2>
+        <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+        <div class="buttons grid grid-cols-3 gap-3">
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-1.png" alt="">
+                <p>Add Money</p>
+            </button>
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-2.png" alt="">
+                <p>CashOut</p>
+            </button>
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-3.png" alt="">
+                <p>Send Money</p>
+            </button>
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-4.png" alt="">
+                <p>Get Bonus</p>
+            </button>
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-5.png" alt="">
+                <p>Pay Bill</p>
+            </button>
+            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+                <img src="./assets/opt-6.png" alt="">
+                <p>Transactions</p>
+            </button>
+        </div>
+    </section>
 
     <script src="logout.js"></script>
 </body>
