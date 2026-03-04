@@ -6,7 +6,7 @@ login.addEventListener('click',()=>{
     const Input_number = number.value;
     if(Input_number == '01872549981' && Input_pin == '9762'){
         alert('login success');
-        
+        window.location.assign('home.html')
     }
     else{
         alert('login failed');
