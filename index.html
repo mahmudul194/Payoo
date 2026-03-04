@@ -34,11 +34,11 @@
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-neutral font-bold">Mobile Number</label>
-          <input maxlength="11" minlength="11" type="tel" class="input rounded-full border-none bg-base-200" placeholder="Enter your number" />
+          <input id="number-input" maxlength="11" minlength="11" type="tel" class="input rounded-full border-none bg-base-200" placeholder="Enter your number" required/>
           <br>
           <label class="label text-neutral font-bold">4 Digit Pin</label>
-          <input type="password" class="input bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin"/>
-          <button class="btn btn-wide mx-auto btn-primary rounded-full mt-4">Login</button>
+          <input id="pin-input" type="password" class="input bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin" required/>
+          <button id="login-btn" class="btn btn-wide mx-auto btn-primary rounded-full mt-4">Login</button>
         </fieldset>
       </div>
     </div>
