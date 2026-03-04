@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
     <style>
         *{
@@ -20,7 +24,27 @@
         }
     </style>
 </head>
-<body>
+<body class=" min-h-screen max-w-md bg-base-200 mx-auto">
+    <div class="logo w-[200px] mx-auto pt-32">
+        <img src="./assets/Logo-full.png" alt="">
+    </div>
     
+    <div class="form pt-10">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Mobile Number</label>
+          <input maxlength="11" minlength="11" type="tel" class="input rounded-full border-none bg-base-200" placeholder="Enter your number" />
+          <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input type="password" class="input bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin"/>
+          <button class="btn btn-wide mx-auto btn-primary rounded-full mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+    
+
+    <script src="login.js"></script>
 </body>
 </html>
