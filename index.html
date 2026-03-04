@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <!-- Tailwind styles -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +34,10 @@
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
-          <label class="label text-neutral font-bold">Mobile Number</label>
+          <label class="label text-white font-bold">Mobile Number</label>
           <input id="number-input" maxlength="11" minlength="11" type="tel" class="input rounded-full border-none bg-base-200" placeholder="Enter your number" required/>
           <br>
-          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <label class="label text-white font-bold">4 Digit Pin</label>
           <input id="pin-input" type="password" class="input bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin" required/>
           <button id="login-btn" class="btn btn-wide mx-auto btn-primary rounded-full mt-4">Login</button>
         </fieldset>

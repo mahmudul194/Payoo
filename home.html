@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dark" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <!-- Tailwind styles -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +34,7 @@
                 </div>
                 <div class="balance-info">
                     <h2 class="text-2xl font-bold">$ <span id="balance">45000</span></h2>
-                    <p class="text-neutral/50">available balance</p>
+                    <p class="text-white/50">available balance</p>
                 </div>
             </div>
             <div class="right">
@@ -43,7 +44,7 @@
     </header>
     <section class="w-11/12 mx-auto py-10 space-y-3">
         <h2 class="text-3xl font-bold">Welcome to pay<span class="text-primary">oo</span></h2>
-        <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        <p class="text-white/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
         <div class="buttons grid grid-cols-3 gap-3">
             <button class="btn flex-col h-full py-4 btn-primary btn-soft">
@@ -75,17 +76,17 @@
 
     <section id="cashout" class="w-11/12 mx-auto py-5">
         <h2 class="text-xl font-bold">Cashout</h2>
-            <div class="form pt-10">
+            <div class="form pt-5">
         <div class="card bg-base-100 w-full shadow rounded-2xl">
       <div class="card-body">
         <fieldset class="fieldset">
-          <label class="label text-neutral font-bold">Agent Number</label>
+          <label class="label text-white font-bold">Agent Number</label>
           <input id="cashout-agent" maxlength="11" minlength="11" type="tel" class="input w-full rounded-full border-none bg-base-200" placeholder="Enter your number" required/>
           <br>
-           <label class="label text-neutral font-bold">Amount</label>
+           <label class="label text-white font-bold">Amount</label>
           <input id="cashout-amount" type="number" min="100" max="50000" class="input w-full rounded-full border-none bg-base-200" placeholder="Enter Amount to withdraw" required/>
           <br>
-          <label class="label text-neutral font-bold">Pin Number</label>
+          <label class="label text-white font-bold">Pin Number</label>
           <input id="cashout-pin" type="password" class="input w-full bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin" required/>
           <button id="cashout-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Withdraw Money</button>
         </fieldset>
