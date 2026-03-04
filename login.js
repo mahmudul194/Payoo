@@ -1,6 +1,7 @@
 const login = document.getElementById('login-btn')
 const number = document.getElementById('number-input')
 const pin = document.getElementById('pin-input')
+
 login.addEventListener('click',()=>{
     const Input_pin = pin.value;
     const Input_number = number.value;
