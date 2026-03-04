@@ -10,12 +10,12 @@ cashoutBtn.addEventListener("click", () => {
   const pin = pinNumber.value;
   const amount = Number(amountNumber.value);
   const newBalance = currentBalance - amount;
-  
+
   if (newBalance < 0) {
     alert("invalid amount");
     return;
   }
-  if (agent == "01881164401" && agent.length == 11 && pin == "9762") {
+  if (agent.length == 11 && pin == "9762") {
     if (amount >= 100 && amount <= 50000) {
       alert("withdrawal successful");
       balance.innerText = `${newBalance}`;
