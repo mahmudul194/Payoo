@@ -3,9 +3,9 @@ const agentNumber = document.getElementById("cashout-agent");
 const pinNumber = document.getElementById("cashout-pin");
 const amountNumber = document.getElementById("cashout-amount");
 const balance = document.getElementById("balance");
-const currentBalance = balance.innerText;
 
 cashoutBtn.addEventListener("click", () => {
+  const currentBalance = Number(balance.innerText);
   const agent = agentNumber.value;
   const pin = pinNumber.value;
   const amount = Number(amountNumber.value);
@@ -23,4 +23,7 @@ cashoutBtn.addEventListener("click", () => {
   } else {
     alert("wrong pin or agent Number not valid");
   }
+  agentNumber.value = "";
+  pinNumber.value = "";
+  amountNumber.value = "";
 });
