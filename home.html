@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html data-theme="dark" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Payoo - Mobile Banking</title>
     <style>
-        *{
+        * {
             font-family: 'Outfit', sans-serif;
         }
     </style>
 </head>
+
 <body class=" min-h-screen max-w-md bg-base-200 mx-auto">
 
     <header class="border-b-2 border-gray-300 sticky top-0 bg-base-200 z-10">
@@ -38,7 +42,8 @@
                 </div>
             </div>
             <div class="right">
-                <button id="logout-btn" class="btn btn-soft"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</button>
+                <button id="logout-btn" class="btn btn-soft"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                    out</button>
             </div>
         </section>
     </header>
@@ -74,27 +79,72 @@
         </div>
     </section>
 
+    <section id="add-money" class="w-11/12 mx-auto py-5">
+        <h2 class="text-xl font-bold">Add Money</h2>
+        <div class="form pt-5">
+            <div class="card bg-base-100 w-full shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-white font-bold">Select a bank</label>
+                        <select class="select mb-5 rounded-full w-full">
+                            <option disabled selected>Select Bank</option>
+                            <option>Brac Bank</option>
+                            <option>Bangladesh National Bank</option>
+                            <option>Velvet</option>
+                        </select>
+                        <label class="label text-white font-bold">Bank Account Number</label>
+                        <input id="add-money-bank-account" maxlength="11" minlength="11" type="tel"
+                            class="input w-full rounded-full border-none bg-base-200" placeholder="Enter your 11 digit account number"
+                            required />
+                        <br>
+                        <label class="label text-white font-bold">Amount to add</label>
+                        <input id="add-money-amount" type="number" min="100" max="50000"
+                            class="input w-full rounded-full border-none bg-base-200"
+                            placeholder="Enter Amount to Add" required />
+                        <br>
+                        <label class="label text-white font-bold">Pin Number</label>
+                        <input id="add-money-pin" type="password"
+                            class="input w-full bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin"
+                            required />
+                        <button id="cashout-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Withdraw
+                            Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="cashout" class="w-11/12 mx-auto py-5">
         <h2 class="text-xl font-bold">Cashout</h2>
-            <div class="form pt-5">
-    <div class="card bg-base-100 w-full shadow rounded-2xl">
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label text-white font-bold">Agent Number</label>
-          <input id="cashout-agent" maxlength="11" minlength="11" type="tel" class="input w-full rounded-full border-none bg-base-200" placeholder="Enter your number" required/>
-          <br>
-           <label class="label text-white font-bold">Amount</label>
-          <input id="cashout-amount" type="number" min="100" max="50000" class="input w-full rounded-full border-none bg-base-200" placeholder="Enter Amount to withdraw" required/>
-          <br>
-          <label class="label text-white font-bold">Pin Number</label>
-          <input id="cashout-pin" type="password" class="input w-full bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin" required/>
-          <button id="cashout-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Withdraw Money</button>
-        </fieldset>
-      </div>
+        <div class="form pt-5">
+            <div class="card bg-base-100 w-full shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-white font-bold">Agent Number</label>
+                        <input id="cashout-agent" maxlength="11" minlength="11" type="tel"
+                            class="input w-full rounded-full border-none bg-base-200" placeholder="Enter your number"
+                            required />
+                        <br>
+                        <label class="label text-white font-bold">Amount</label>
+                        <input id="cashout-amount" type="number" min="100" max="50000"
+                            class="input w-full rounded-full border-none bg-base-200"
+                            placeholder="Enter Amount to withdraw" required />
+                        <br>
+                        <label class="label text-white font-bold">Pin Number</label>
+                        <input id="cashout-pin" type="password"
+                            class="input w-full bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin"
+                            required />
+                        <button id="cashout-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Withdraw
+                            Money</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="logout.js"></script>
     <script src="cashout.js"></script>
     <script src="machine.js"></script>
 </body>
+
 </html>
