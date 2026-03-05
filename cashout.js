@@ -30,7 +30,7 @@ cashoutBtn.addEventListener('click',()=>{
 
 
 
-// applied normal bigginer like approch.
+// applied normal beginner like approch.
 // const cashoutBtn = document.getElementById("cashout-btn");
 // const agentNumber = document.getElementById("cashout-agent");
 // const pinNumber = document.getElementById("cashout-pin");
