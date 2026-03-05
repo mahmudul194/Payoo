@@ -31,7 +31,7 @@ addMoneyBtn.addEventListener('click',()=>{
             return;
         }
         if(addAmount >= 100){
-            alert('Money added to the account');
+            alert(`Money added to the account by ${bankS} at ${new Date}`);
             balance.innerText = NewBalance;
         }
         else if(addAmount < 100){
