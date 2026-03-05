@@ -5,8 +5,9 @@ cashoutBtn.addEventListener('click',()=>{
   const pinNumber = getvaluefromInput('cashout-pin');
   const amount = getvaluefromInput('cashout-amount')
   const CurrentAmount = Number(amount);
-  const balance = document.getElementById('balance')
-  const currentBalance = Number(balance.innerText);
+  // const balance = document.getElementById('balance')
+  // const currentBalance = Number(balance.innerText);
+  const currentBalance = getBalance();
   const NewBalance = currentBalance - CurrentAmount;
 
   if(NewBalance < 0){
@@ -14,14 +15,23 @@ cashoutBtn.addEventListener('click',()=>{
     return;
   }
   if(agentNumber.length === 11 && pinNumber === '9762'){
+    if(CurrentAmount > 50000){
+      alert('Cashout Limit for a day is 50000 not more then that.')
+    }
     if(CurrentAmount >= 100 && CurrentAmount <= 50000){
       alert('Cashout successful')
-      balance.innerText = NewBalance;
+      // balance.innerText = NewBalance;
+      setBalance(NewBalance);
     }
   }
   else{
-    alert('invalid pin or agent number.')
-  }
+    if(agentNumber.length !== 11){
+      alert('Invalid Number.')
+    }
+    else if(pinNumber !== '9762'){
+      alert('Incorrect pin');
+    }
+  }  
 })
 
 
