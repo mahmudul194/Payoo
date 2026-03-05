@@ -86,11 +86,12 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label text-white font-bold">Select a bank</label>
-                        <select class="select mb-5 rounded-full w-full">
+                        <select id="add-money-bank" class="select mb-5 rounded-full w-full">
                             <option disabled selected>Select Bank</option>
-                            <option>Brac Bank</option>
-                            <option>Bangladesh National Bank</option>
-                            <option>Velvet</option>
+                            <option value="brac">Brac Bank</option>
+                            <option value="city">City Bank</option>
+                            <option value="dbbl">DBBL</option>
+                            <option value="grameen">Grameen Bank</option>
                         </select>
                         <label class="label text-white font-bold">Bank Account Number</label>
                         <input id="add-money-bank-account" maxlength="11" minlength="11" type="tel"
@@ -106,7 +107,7 @@
                         <input id="add-money-pin" type="password"
                             class="input w-full bg-base-200 border-none rounded-full" placeholder="Enter 4 digit pin"
                             required />
-                        <button id="cashout-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Withdraw
+                        <button id="add-money-btn" class="btn mx-auto btn-primary w-full rounded-full mt-4">Add
                             Money</button>
                     </fieldset>
                 </div>
@@ -145,6 +146,7 @@
     <script src="logout.js"></script>
     <script src="cashout.js"></script>
     <script src="machine.js"></script>
+    <script src="addmoney.js"></script>
 </body>
 
 </html>
