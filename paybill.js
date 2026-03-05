@@ -34,4 +34,13 @@ payBtn.addEventListener('click',()=>{
             balance.innerText = remainingbalance;
         }
     }
+
+    const transactions = document.getElementById('transactions-container')
+    const newtransactions = document.createElement('div')
+    newtransactions.innerHTML = `
+     <div class="transactions-card p-5 bg-base-100">
+                paid bill by ${biller} at ${new Date}
+            </div>
+    `
+    transactions.append(newtransactions);
 })

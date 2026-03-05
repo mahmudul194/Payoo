@@ -40,7 +40,17 @@ addMoneyBtn.addEventListener('click',()=>{
         }
     }
 
-    pinNumber.input = ''
+    const transactions = document.getElementById('transactions-container')
+    const newtransactions = document.createElement('div')
+    newtransactions.innerHTML = `
+     <div class="transactions-card p-5 bg-base-100">
+                Money added to the account by ${bankS}, ac no-${account} at ${new Date}
+            </div>
+    `
+    transactions.append(newtransactions);
+
+    pinNumber.value = ''
     amount.value = ''
     BankaccountNumber.value = '';
+    selectBank.value = 'Select Bank';
 })

@@ -37,6 +37,15 @@ sendBtn.addEventListener("click", () => {
     }
   }
 
+      const transactions = document.getElementById('transactions-container')
+    const newtransactions = document.createElement('div')
+    newtransactions.innerHTML = `
+     <div class="transactions-card p-5 bg-base-100">
+                money sent by ${userNumber} at ${new Date}
+            </div>
+    `
+    transactions.append(newtransactions);
+
   sendmoneyuser.value = "";
   sendmoneyamount.value = "";
   sendmoneypin.value = "";

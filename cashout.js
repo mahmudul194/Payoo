@@ -31,7 +31,16 @@ cashoutBtn.addEventListener('click',()=>{
     else if(pinNumber !== '9762'){
       alert('Incorrect pin');
     }
-  }  
+  }
+  
+      const transactions = document.getElementById('transactions-container')
+    const newtransactions = document.createElement('div')
+    newtransactions.innerHTML = `
+     <div class="transactions-card p-5 bg-base-100">
+                Money cashout by ${agentNumber} at ${new Date}
+            </div>
+    `
+    transactions.append(newtransactions);
 })
 
 
