@@ -48,7 +48,6 @@ cashoutBtn.addEventListener('click',()=>{
 
 
 
-
 // applied normal beginner like approch.
 // const cashoutBtn = document.getElementById("cashout-btn");
 // const agentNumber = document.getElementById("cashout-agent");
